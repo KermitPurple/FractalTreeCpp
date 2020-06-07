@@ -28,6 +28,9 @@ FractalTree::FractalTree(float angle, float length, float d){
 }
 
 void FractalTree::draw(float x, float y, float angle, float length){
+    if(length < 0){
+        length = starting_length;
+    }
     if(length >= min_length){
         float rad = angle / 180 * M_PI;
         float new_x = x + cos(rad) * length;
@@ -41,7 +44,7 @@ void FractalTree::draw(float x, float y, float angle, float length){
     }
 }
 
-void FractalTree::kbin(int key, int x, int y){
+void FractalTree::special_kbin(int key, int x, int y){
     switch(key){
         case GLUT_KEY_UP:
             divisor -= 0.05;
@@ -54,6 +57,19 @@ void FractalTree::kbin(int key, int x, int y){
             break;
         case GLUT_KEY_RIGHT:
             offset_angle += 2;
+            break;
+        default:
+            break;
+    }
+}
+
+void FractalTree::kbin(unsigned char key, int x, int y){
+    switch(key){
+        case '-':
+            starting_length -= 1;
+            break;
+        case '+':
+            starting_length += 1;
             break;
         default:
             break;
