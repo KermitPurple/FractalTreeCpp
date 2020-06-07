@@ -9,6 +9,7 @@ public:
     FractalTree(float angle);
     FractalTree(float angle, float length);
     FractalTree(float angle, float length, float d);
+    FractalTree(float angle, float length, float d, float sl);
     void draw(float x, float y, float angle, float length);
     void special_kbin(int key, int x, int y);
     void kbin(unsigned char key, int x, int y);

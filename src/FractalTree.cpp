@@ -7,24 +7,35 @@ FractalTree::FractalTree(){
     offset_angle = 45;
     min_length = 0.2;
     divisor = 2;
+    starting_length = 75;
 }
 
 FractalTree::FractalTree(float angle){
     offset_angle = angle;
     min_length = 0.2;
     divisor = 2;
+    starting_length = 75;
 }
 
 FractalTree::FractalTree(float angle, float length){
     offset_angle = angle;
     min_length = length;
     divisor = 2;
+    starting_length = 75;
 }
 
 FractalTree::FractalTree(float angle, float length, float d){
     offset_angle = angle;
     min_length = length;
     divisor = d;
+    starting_length = 75;
+}
+
+FractalTree::FractalTree(float angle, float length, float d, float sl){
+    offset_angle = angle;
+    min_length = length;
+    divisor = d;
+    starting_length = sl;
 }
 
 void FractalTree::draw(float x, float y, float angle, float length){
