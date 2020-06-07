@@ -1,16 +1,17 @@
+#include <iostream>
 #include<math.h>
 #include<GL/glut.h>
 #include<FractalTree.h>
 
 FractalTree::FractalTree(){
     offset_angle = 45;
-    min_length = 0.01;
+    min_length = 0.2;
     divisor = 2;
 }
 
 FractalTree::FractalTree(float angle){
     offset_angle = angle;
-    min_length = 0.01;
+    min_length = 0.2;
     divisor = 2;
 }
 
