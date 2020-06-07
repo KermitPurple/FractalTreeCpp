@@ -21,6 +21,9 @@ int main(int argc, char *argv[]){
 
     //functions
     glutDisplayFunc(display);
+    glutSpecialFunc([](int key, int x, int y){
+            tree.kbin(key, x, y);
+            });
     glutIdleFunc(display);
 
     //loop

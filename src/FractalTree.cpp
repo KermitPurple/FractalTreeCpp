@@ -63,3 +63,22 @@ void FractalTree::draw(float x, float y, float angle, float length){
         draw(new_x, new_y, angle - offset_angle, length / divisor);
     }
 }
+
+void FractalTree::kbin(int key, int x, int y){
+    switch(key){
+        case GLUT_KEY_UP:
+            divisor -= 0.05;
+            break;
+        case GLUT_KEY_DOWN:
+            divisor += 0.05;
+            break;
+        case GLUT_KEY_LEFT:
+            offset_angle -= 2;
+            break;
+        case GLUT_KEY_RIGHT:
+            offset_angle += 2;
+            break;
+        default:
+            break;
+    }
+}

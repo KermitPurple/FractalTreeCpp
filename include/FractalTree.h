@@ -15,4 +15,5 @@ public:
     void set_divisor(float d);
     void add_to_divisor(float d);
     void draw(float x, float y, float angle, float length);
+    void kbin(int key, int x, int y);
 };
