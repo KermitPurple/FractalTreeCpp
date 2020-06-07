@@ -13,4 +13,5 @@ public:
     void draw(float x, float y, float angle, float length);
     void special_kbin(int key, int x, int y);
     void kbin(unsigned char key, int x, int y);
+    static void print_controls();
 };

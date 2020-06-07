@@ -19,6 +19,9 @@ int main(int argc, char *argv[]){
     glutCreateWindow("Fractal Tree");
     glOrtho(-100, 100, -100, 100, -1, 1);
 
+    //print controls
+    FractalTree::print_controls();
+
     //functions
     glutDisplayFunc(display);
     glutIdleFunc(display);

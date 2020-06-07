@@ -86,3 +86,12 @@ void FractalTree::kbin(unsigned char key, int x, int y){
             break;
     }
 }
+
+void FractalTree::print_controls(){
+    std::cout << "UP : Increase length of subsequent lines" << std::endl;
+    std::cout << "DOWN : Decrease length of subsequent lines" << std::endl;
+    std::cout << "RIGHT : Increase offset angle" << std::endl;
+    std::cout << "LEFT : Decrease offset angle" << std::endl;
+    std::cout << "'+' : Increase starting length" << std::endl;
+    std::cout << "'-' : Decrease starting length" << std::endl;
+}
