@@ -1,9 +1,9 @@
 class FractalTree{
 private:
-public:
     float offset_angle;
     float min_length;
     float divisor;
+public:
     FractalTree();
     FractalTree(float angle);
     FractalTree(float angle, float length);
