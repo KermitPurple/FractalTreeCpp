@@ -34,6 +34,22 @@ void FractalTree::add_to_offset_angle(float angle){
     offset_angle += angle;
 }
 
+void FractalTree::set_min_length(float length){
+    min_length = length;
+}
+
+void FractalTree::add_to_min_length(float length){
+    min_length += length;
+}
+
+void FractalTree::set_divisor(float d){
+    divisor = d;
+}
+
+void FractalTree::add_to_divisor(float d){
+    divisor += d;
+}
+
 void FractalTree::draw(float x, float y, float angle, float length){
     float rad = angle / 180 * M_PI;
     float new_x = x + cos(rad) * length;
